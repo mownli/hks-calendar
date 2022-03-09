@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+	android:id="@+id/monthSelectionLayout"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:gravity="center"
+	android:orientation="vertical">
+
+	<EditText
+		android:id="@+id/monthSelectionYearEdit"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:ems="10"
+		android:hint="@string/fieldNameYear"
+		android:inputType="numberDecimal"
+		android:maxLength="4"
+		android:textAlignment="center" />
+
+	<TableLayout
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+
+		<TableRow
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent">
+
+			<Button
+				android:id="@+id/monthSelection0"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:text="@string/month_0"
+				android:textAllCaps="false" />
+
+			<Button
+				android:id="@+id/monthSelection1"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:text="@string/month_1"
+				android:textAllCaps="false" />
+
+			<Button
+				android:id="@+id/monthSelection2"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:text="@string/month_2"
+				android:textAllCaps="false" />
+		</TableRow>
+
+		<TableRow
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent">
+
+			<Button
+				android:id="@+id/monthSelection3"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:text="@string/month_3"
+				android:textAllCaps="false" />
+
+			<Button
+				android:id="@+id/monthSelection4"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:text="@string/month_4"
+				android:textAllCaps="false" />
+
+			<Button
+				android:id="@+id/monthSelection5"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:text="@string/month_5"
+				android:textAllCaps="false" />
+		</TableRow>
+
+		<TableRow
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent">
+
+			<Button
+				android:id="@+id/monthSelection6"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:text="@string/month_6"
+				android:textAllCaps="false" />
+
+			<Button
+				android:id="@+id/monthSelection7"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:text="@string/month_7"
+				android:textAllCaps="false" />
+
+			<Button
+				android:id="@+id/monthSelection8"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:text="@string/month_8"
+				android:textAllCaps="false" />
+		</TableRow>
+
+		<TableRow
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent">
+
+			<Button
+				android:id="@+id/monthSelection9"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:text="@string/month_9"
+				android:textAllCaps="false" />
+
+			<Button
+				android:id="@+id/monthSelection10"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:text="@string/month_10"
+				android:textAllCaps="false" />
+
+			<Button
+				android:id="@+id/monthSelection11"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:text="@string/month_11"
+				android:textAllCaps="false" />
+
+		</TableRow>
+	</TableLayout>
+
+</LinearLayout>
+

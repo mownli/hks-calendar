@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context="hks.calendar.ActivityEditEventType">
+
+	<androidx.constraintlayout.widget.ConstraintLayout
+		android:id="@+id/layoutEventTypeEditColorPreview"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/dialogActivityFieldMargin"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="1.0"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent">
+
+		<TextView
+			android:id="@+id/fieldNameColorPreview"
+			android:layout_width="wrap_content"
+			android:layout_height="@dimen/dialogActivityFieldHeight"
+			android:layout_marginStart="8dp"
+			android:layout_marginTop="@dimen/dialogActivityFieldMargin"
+			android:layout_marginBottom="@dimen/dialogActivityFieldMargin"
+			android:gravity="center"
+			android:text="@string/fieldNameColorPreview"
+			android:textSize="@dimen/dialogActivityFontSize"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toTopOf="parent" />
+
+		<TextView
+			android:id="@+id/fieldColorPreview"
+			android:layout_width="wrap_content"
+			android:layout_height="@dimen/dialogActivityFieldHeight"
+			android:layout_marginStart="8dp"
+			android:layout_marginTop="@dimen/dialogActivityFieldMargin"
+			android:layout_marginBottom="@dimen/dialogActivityFieldMargin"
+			android:text="@string/bullet"
+			android:gravity="center"
+			android:textSize="@dimen/dialogActivityFontSize"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintStart_toEndOf="@+id/fieldNameColorPreview"
+			app:layout_constraintTop_toTopOf="parent" />
+
+	</androidx.constraintlayout.widget.ConstraintLayout>
+
+	<androidx.constraintlayout.widget.ConstraintLayout
+		android:id="@+id/layoutEventTypeEditColorR"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/dialogActivityFieldMargin"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/layoutEventTypeEditColorPreview">
+
+		<TextView
+			android:id="@+id/eventTypeEditColorFieldNameR"
+			android:layout_width="wrap_content"
+			android:layout_height="@dimen/dialogActivityFieldHeight"
+			android:layout_marginStart="8dp"
+			android:gravity="center"
+			android:text="R"
+			android:textSize="@dimen/dialogActivityFontSize"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toTopOf="parent" />
+
+		<EditText
+			android:id="@+id/eventTypeEditColorR"
+			android:layout_width="53dp"
+			android:layout_height="@dimen/dialogActivityFieldHeight"
+			android:layout_marginStart="8dp"
+			android:layout_marginTop="@dimen/dialogActivityFieldMargin"
+			android:layout_marginBottom="@dimen/dialogActivityFieldMargin"
+			android:ems="10"
+			android:inputType="number"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintStart_toEndOf="@+id/eventTypeEditColorFieldNameR"
+			app:layout_constraintTop_toTopOf="parent" />
+
+		<SeekBar
+			android:id="@+id/eventTypeEditSeekColorR"
+			android:layout_width="0dp"
+			android:layout_height="@dimen/dialogActivityFieldHeight"
+			android:layout_marginStart="8dp"
+			android:layout_marginTop="@dimen/dialogActivityFieldMargin"
+			android:layout_marginEnd="8dp"
+			android:layout_marginBottom="@dimen/dialogActivityFieldMargin"
+			android:max="255"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toEndOf="@+id/eventTypeEditColorR"
+			app:layout_constraintTop_toTopOf="parent" />
+	</androidx.constraintlayout.widget.ConstraintLayout>
+
+	<androidx.constraintlayout.widget.ConstraintLayout
+		android:id="@+id/layoutEventTypeEditColorG"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/dialogActivityFieldMargin"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.0"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/layoutEventTypeEditColorR">
+
+		<TextView
+			android:id="@+id/eventTypeEditColorFieldNameG"
+			android:layout_width="wrap_content"
+			android:layout_height="@dimen/dialogActivityFieldHeight"
+			android:layout_marginStart="8dp"
+			android:gravity="center"
+			android:text="G"
+			android:textSize="@dimen/dialogActivityFontSize"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toTopOf="parent" />
+
+		<EditText
+			android:id="@+id/eventTypeEditColorG"
+			android:layout_width="53dp"
+			android:layout_height="@dimen/dialogActivityFieldHeight"
+			android:layout_marginStart="8dp"
+			android:layout_marginTop="@dimen/dialogActivityFieldMargin"
+			android:layout_marginBottom="@dimen/dialogActivityFieldMargin"
+			android:ems="10"
+			android:inputType="number"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintStart_toEndOf="@+id/eventTypeEditColorFieldNameG"
+			app:layout_constraintTop_toTopOf="parent" />
+
+		<SeekBar
+			android:id="@+id/eventTypeEditSeekColorG"
+			android:layout_width="0dp"
+			android:layout_height="@dimen/dialogActivityFieldHeight"
+			android:layout_marginStart="8dp"
+			android:layout_marginTop="@dimen/dialogActivityFieldMargin"
+			android:layout_marginEnd="8dp"
+			android:layout_marginBottom="@dimen/dialogActivityFieldMargin"
+			android:max="255"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toEndOf="@+id/eventTypeEditColorG"
+			app:layout_constraintTop_toTopOf="parent" />
+	</androidx.constraintlayout.widget.ConstraintLayout>
+
+	<androidx.constraintlayout.widget.ConstraintLayout
+		android:id="@+id/layoutEventTypeEditColorB"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/dialogActivityFieldMargin"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.0"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/layoutEventTypeEditColorG">
+
+		<TextView
+			android:id="@+id/eventTypeEditColorFieldNameB"
+			android:layout_width="wrap_content"
+			android:layout_height="@dimen/dialogActivityFieldHeight"
+			android:layout_marginStart="8dp"
+			android:gravity="center"
+			android:text="B"
+			android:textSize="@dimen/dialogActivityFontSize"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toTopOf="parent" />
+
+		<EditText
+			android:id="@+id/eventTypeEditColorB"
+			android:layout_width="53dp"
+			android:layout_height="@dimen/dialogActivityFieldHeight"
+			android:layout_marginStart="8dp"
+			android:layout_marginTop="@dimen/dialogActivityFieldMargin"
+			android:layout_marginBottom="@dimen/dialogActivityFieldMargin"
+			android:ems="10"
+			android:inputType="number"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintStart_toEndOf="@+id/eventTypeEditColorFieldNameB"
+			app:layout_constraintTop_toTopOf="parent" />
+
+		<SeekBar
+			android:id="@+id/eventTypeEditSeekColorB"
+			android:layout_width="0dp"
+			android:layout_height="@dimen/dialogActivityFieldHeight"
+			android:layout_marginStart="8dp"
+			android:layout_marginTop="@dimen/dialogActivityFieldMargin"
+			android:layout_marginEnd="8dp"
+			android:layout_marginBottom="@dimen/dialogActivityFieldMargin"
+			android:max="255"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toEndOf="@+id/eventTypeEditColorB"
+			app:layout_constraintTop_toTopOf="parent" />
+	</androidx.constraintlayout.widget.ConstraintLayout>
+
+	<androidx.constraintlayout.widget.ConstraintLayout
+		android:id="@+id/layoutEventTypeEditName"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/dialogActivityFieldMargin"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.0"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/layoutEventTypeEditColorB">
+
+		<TextView
+			android:id="@+id/fieldNameName"
+			android:layout_width="wrap_content"
+			android:layout_height="@dimen/dialogActivityFieldHeight"
+			android:layout_marginStart="8dp"
+			android:layout_marginTop="@dimen/dialogActivityFieldMargin"
+			android:layout_marginBottom="@dimen/dialogActivityFieldMargin"
+			android:gravity="center"
+			android:text="@string/fieldNameName"
+			android:textSize="@dimen/dialogActivityFontSize"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toTopOf="parent" />
+
+		<EditText
+			android:id="@+id/nameInput"
+			android:layout_width="0dp"
+			android:layout_height="@dimen/dialogActivityFieldHeight"
+			android:layout_marginStart="8dp"
+			android:layout_marginTop="@dimen/dialogActivityFieldMargin"
+			android:layout_marginEnd="8dp"
+			android:layout_marginBottom="@dimen/dialogActivityFieldMargin"
+			android:ems="10"
+			android:inputType="text|textCapSentences"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toEndOf="@+id/fieldNameName"
+			app:layout_constraintTop_toTopOf="parent" />
+	</androidx.constraintlayout.widget.ConstraintLayout>
+
+	<androidx.constraintlayout.widget.ConstraintLayout
+		android:id="@+id/layoutEventTypeButtons"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent">
+
+		<Button
+			android:id="@+id/buttonEventTypeSave"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="8dp"
+			android:layout_marginTop="@dimen/dialogActivityFieldMargin"
+			android:layout_marginEnd="4dp"
+			android:layout_marginBottom="@dimen/dialogActivityFieldMargin"
+			android:text="@string/buttonTextSave"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintEnd_toStartOf="@+id/buttonEventTypeDelete"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toTopOf="parent" />
+
+		<Button
+			android:id="@+id/buttonEventTypeDelete"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="4dp"
+			android:layout_marginTop="@dimen/dialogActivityFieldMargin"
+			android:layout_marginEnd="8dp"
+			android:layout_marginBottom="@dimen/dialogActivityFieldMargin"
+			android:text="@string/buttonTextDelete"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toEndOf="@+id/buttonEventTypeSave"
+			app:layout_constraintTop_toTopOf="parent" />
+	</androidx.constraintlayout.widget.ConstraintLayout>
+
+	<androidx.constraintlayout.widget.ConstraintLayout
+		android:id="@+id/constraintLayout5"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/dialogActivityFieldMargin"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/layoutEventTypeEditName">
+
+		<TextView
+			android:id="@+id/fieldNameUSNC"
+			android:layout_width="wrap_content"
+			android:layout_height="@dimen/dialogActivityFieldHeight"
+			android:layout_marginStart="8dp"
+			android:layout_marginTop="@dimen/dialogActivityFieldMargin"
+			android:layout_marginBottom="@dimen/dialogActivityFieldMargin"
+			android:gravity="center"
+			android:text="@string/fieldNameUSNC"
+			android:textSize="@dimen/dialogActivityFontSize"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toTopOf="parent" />
+
+		<Switch
+			android:id="@+id/fieldUSNC"
+			android:layout_width="wrap_content"
+			android:layout_height="@dimen/dialogActivityFieldHeight"
+			android:layout_marginStart="8dp"
+			android:layout_marginTop="@dimen/dialogActivityFieldMargin"
+			android:layout_marginBottom="@dimen/dialogActivityFieldMargin"
+			android:gravity="center"
+			android:textSize="@dimen/dialogActivityFontSize"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintStart_toEndOf="@+id/fieldNameUSNC"
+			app:layout_constraintTop_toTopOf="parent" />
+	</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

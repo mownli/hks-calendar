@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<dimen name="text_margin">16dp</dimen>
+	<dimen name="month_selection_button_padding">10dp</dimen>
+
+	<dimen name="dialogActivityFontSize">18sp</dimen>
+	<dimen name="dialogActivityFieldHeight">40dp</dimen>
+	<dimen name="dialogActivityFieldMargin">4dp</dimen>
+
+	<dimen name="calendarTableCellMargin">4dp</dimen>
+	<dimen name="calendarTableRowWidth">@dimen/match_parent</dimen>
+	<dimen name="calendarTableRowHeight">@dimen/wrap_content</dimen>
+
+	<dimen name="calendarTableCellWidth">0dp</dimen>
+	<dimen name="calendarTableCellHeight">0dp</dimen>
+
+	<dimen name="calendarTableCellWidthHeader">0dp</dimen>
+	<dimen name="calendarTableCellHeightHeader">@dimen/wrap_content</dimen>
+
+
+	<item name="match_parent" format="integer" type="dimen">-1</item>
+	<item name="wrap_content" format="integer" type="dimen">-2</item>
+</resources>

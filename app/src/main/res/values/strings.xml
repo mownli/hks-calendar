@@ -1,0 +1,79 @@
+<resources>
+	<string name="app_name">Calendar</string>
+	<string name="notificationChannelName">Global settings</string>
+
+	<string name="month_0">January</string>
+	<string name="month_1">February</string>
+	<string name="month_2">March</string>
+	<string name="month_3">April</string>
+	<string name="month_4">May</string>
+	<string name="month_5">June</string>
+	<string name="month_6">July</string>
+	<string name="month_7">August</string>
+	<string name="month_8">September</string>
+	<string name="month_9">October</string>
+	<string name="month_10">November</string>
+	<string name="month_11">December</string>
+
+	<string name="month_short_0">Jan</string>
+	<string name="month_short_1">Feb</string>
+	<string name="month_short_2">Mar</string>
+	<string name="month_short_3">Apr</string>
+	<string name="month_short_4">May</string>
+	<string name="month_short_5">Jun</string>
+	<string name="month_short_6">Jul</string>
+	<string name="month_short_7">Aug</string>
+	<string name="month_short_8">Sep</string>
+	<string name="month_short_9">Oct</string>
+	<string name="month_short_10">Nov</string>
+	<string name="month_short_11">Dec</string>
+
+	<string name="weekday_0">Sunday</string>
+	<string name="weekday_1">Monday</string>
+	<string name="weekday_2">Tuesday</string>
+	<string name="weekday_3">Wednesday</string>
+	<string name="weekday_4">Thursday</string>
+	<string name="weekday_5">Friday</string>
+	<string name="weekday_6">Saturday</string>
+
+	<string name="weekday_short_0">Sun</string>
+	<string name="weekday_short_1">Mon</string>
+	<string name="weekday_short_2">Tue</string>
+	<string name="weekday_short_3">Wed</string>
+	<string name="weekday_short_4">Thu</string>
+	<string name="weekday_short_5">Fri</string>
+	<string name="weekday_short_6">Sat</string>
+
+	<string name="fieldNameYear">Year</string>
+	<string name="fieldNameMonth">Month</string>
+	<string name="fieldNameDay">Day</string>
+	<string name="fieldNameTime">Time</string>
+	<string name="fieldNameHour">Hr</string>
+	<string name="fieldNameMinute">Min</string>
+	<string name="fieldNameName">Name</string>
+	<string name="fieldNameDescription">Description</string>
+	<string name="fieldNameEventType">Type</string>
+	<string name="fieldNameColorPreview">Color</string>
+
+	<string name="bullet" translatable="false">⬤</string><!--⦿●-->
+	<string name="notAllFieldsAreFilled">Not all required fields are filled.</string>
+	<string name="errorsInFieldValues">There are errors in some fields.</string>
+
+	<string name="buttonTextAdd">Add</string>
+	<string name="buttonTextSave">Save</string>
+	<string name="buttonTextDelete">Delete</string>
+
+	<string name="actionEventTypes">Event types</string>
+	<string name="actionNotificationsSettings">Notification settings</string>
+	<string name="dateChooser">Date chooser</string>
+
+
+	<string name="topButtonText" translatable="false">%1$s %2$d</string>
+	<string name="titleActivityEditEvent">Edit event</string>
+	<string name="titleActivityEventTypeList">Event types</string>
+	<string name="titleActivityEditEventType">Edit event type</string>
+	<string name="buttonTextAddEvent">Add event</string>
+	<string name="fieldNameUSNC">Separate notification settings</string>
+	<string name="notificationChannelUsesGlobalSettings">Uses global settings.</string>
+	<string name="errorCouldNotSaveStorage">Could not save data</string>
+</resources>

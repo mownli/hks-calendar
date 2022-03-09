@@ -1,0 +1,804 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/hhh"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".ActivityMain">
+
+	<hks.calendar.ViewHKSCalendar
+		android:id="@+id/viewHKSCalendar"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="4dp"
+		android:layout_marginTop="4dp"
+		android:layout_marginEnd="4dp"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent">
+
+		<androidx.constraintlayout.widget.ConstraintLayout
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toTopOf="parent"
+			android:id="@+id/headerRow"
+			android:layout_width="0dp"
+			android:layout_height="19dp">
+
+			<TextView
+				android:id="@+id/dayLabel1"
+				android:layout_width="@dimen/calendarTableCellWidthHeader"
+				android:layout_height="@dimen/calendarTableCellHeightHeader"
+				android:layout_marginStart="@dimen/calendarTableCellMargin"
+				android:layout_marginEnd="@dimen/calendarTableCellMargin"
+				android:gravity="center"
+				android:text="@string/weekday_short_1"
+				app:layout_constraintBottom_toBottomOf="parent"
+				app:layout_constraintEnd_toStartOf="@+id/dayLabel2"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toTopOf="parent" />
+
+			<TextView
+				android:id="@+id/dayLabel2"
+				android:layout_width="@dimen/calendarTableCellWidthHeader"
+				android:layout_height="@dimen/calendarTableCellHeightHeader"
+				android:layout_marginStart="@dimen/calendarTableCellMargin"
+				android:layout_marginEnd="@dimen/calendarTableCellMargin"
+				android:gravity="center"
+				android:text="@string/weekday_short_2"
+				app:layout_constraintBottom_toBottomOf="parent"
+				app:layout_constraintEnd_toStartOf="@+id/dayLabel3"
+				app:layout_constraintStart_toEndOf="@+id/dayLabel1"
+				app:layout_constraintTop_toTopOf="parent" />
+
+			<TextView
+				android:id="@+id/dayLabel3"
+				android:layout_width="@dimen/calendarTableCellWidthHeader"
+				android:layout_height="@dimen/calendarTableCellHeightHeader"
+				android:layout_marginStart="@dimen/calendarTableCellMargin"
+				android:layout_marginEnd="@dimen/calendarTableCellMargin"
+				android:gravity="center"
+				android:text="@string/weekday_short_3"
+				app:layout_constraintBottom_toBottomOf="parent"
+				app:layout_constraintEnd_toStartOf="@+id/dayLabel4"
+				app:layout_constraintStart_toEndOf="@+id/dayLabel2"
+				app:layout_constraintTop_toTopOf="parent" />
+
+			<TextView
+				android:id="@+id/dayLabel4"
+				android:layout_width="@dimen/calendarTableCellWidthHeader"
+				android:layout_height="@dimen/calendarTableCellHeightHeader"
+				android:layout_marginStart="@dimen/calendarTableCellMargin"
+				android:layout_marginEnd="@dimen/calendarTableCellMargin"
+				android:gravity="center"
+				android:text="@string/weekday_short_4"
+				app:layout_constraintBottom_toBottomOf="parent"
+				app:layout_constraintEnd_toStartOf="@+id/dayLabel5"
+				app:layout_constraintStart_toEndOf="@+id/dayLabel3"
+				app:layout_constraintTop_toTopOf="parent" />
+
+			<TextView
+				android:id="@+id/dayLabel5"
+				android:layout_width="@dimen/calendarTableCellWidthHeader"
+				android:layout_height="@dimen/calendarTableCellHeightHeader"
+				android:layout_marginStart="@dimen/calendarTableCellMargin"
+				android:layout_marginEnd="@dimen/calendarTableCellMargin"
+				android:gravity="center"
+				android:text="@string/weekday_short_5"
+				app:layout_constraintBottom_toBottomOf="parent"
+				app:layout_constraintEnd_toStartOf="@+id/dayLabel6"
+				app:layout_constraintStart_toEndOf="@+id/dayLabel4"
+				app:layout_constraintTop_toTopOf="parent" />
+
+			<TextView
+				android:id="@+id/dayLabel6"
+				android:layout_width="@dimen/calendarTableCellWidthHeader"
+				android:layout_height="@dimen/calendarTableCellHeightHeader"
+				android:layout_marginStart="@dimen/calendarTableCellMargin"
+				android:layout_marginEnd="@dimen/calendarTableCellMargin"
+				android:gravity="center"
+				android:text="@string/weekday_short_6"
+				app:layout_constraintBottom_toBottomOf="parent"
+				app:layout_constraintEnd_toStartOf="@+id/dayLabel0"
+				app:layout_constraintStart_toEndOf="@+id/dayLabel5"
+				app:layout_constraintTop_toTopOf="parent" />
+
+			<TextView
+				android:id="@+id/dayLabel0"
+				android:layout_width="@dimen/calendarTableCellWidthHeader"
+				android:layout_height="@dimen/calendarTableCellHeightHeader"
+				android:layout_marginStart="@dimen/calendarTableCellMargin"
+				android:layout_marginEnd="@dimen/calendarTableCellMargin"
+				android:gravity="center"
+				android:text="@string/weekday_short_0"
+				app:layout_constraintBottom_toBottomOf="parent"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toEndOf="@+id/dayLabel6"
+				app:layout_constraintTop_toTopOf="parent" />
+		</androidx.constraintlayout.widget.ConstraintLayout>
+
+		<androidx.constraintlayout.widget.ConstraintLayout
+			android:id="@+id/row0"
+			android:layout_width="@dimen/calendarTableRowWidth"
+			android:layout_height="@dimen/calendarTableRowHeight"
+			android:layout_marginTop="4dp"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@+id/headerRow">
+
+			<view
+				android:id="@+id/dayButton00"
+				class="hks.calendar.ViewHKSCalendar$DayButton"
+				android:layout_width="@dimen/calendarTableCellWidth"
+				android:layout_height="@dimen/calendarTableCellHeight"
+				app:layout_constraintDimensionRatio="1:1"
+				android:layout_marginStart="@dimen/calendarTableCellMargin"
+				android:layout_marginEnd="@dimen/calendarTableCellMargin"
+				android:gravity="center"
+				app:layout_constraintBottom_toBottomOf="parent"
+				app:layout_constraintEnd_toStartOf="@+id/dayButton01"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toTopOf="parent" />
+
+			<view
+				android:id="@+id/dayButton01"
+				class="hks.calendar.ViewHKSCalendar$DayButton"
+				android:layout_width="@dimen/calendarTableCellWidth"
+				android:layout_height="@dimen/calendarTableCellHeight"
+				app:layout_constraintDimensionRatio="1:1"
+				android:layout_marginStart="@dimen/calendarTableCellMargin"
+				android:layout_marginEnd="@dimen/calendarTableCellMargin"
+				android:gravity="center"
+				app:layout_constraintBottom_toBottomOf="parent"
+				app:layout_constraintEnd_toStartOf="@+id/dayButton02"
+				app:layout_constraintStart_toEndOf="@+id/dayButton00"
+				app:layout_constraintTop_toTopOf="parent" />
+
+			<view
+				android:id="@+id/dayButton02"
+				class="hks.calendar.ViewHKSCalendar$DayButton"
+				android:layout_width="@dimen/calendarTableCellWidth"
+				android:layout_height="@dimen/calendarTableCellHeight"
+				app:layout_constraintDimensionRatio="1:1"
+				android:layout_marginStart="@dimen/calendarTableCellMargin"
+				android:layout_marginEnd="@dimen/calendarTableCellMargin"
+				android:gravity="center"
+				app:layout_constraintBottom_toBottomOf="parent"
+				app:layout_constraintEnd_toStartOf="@+id/dayButton03"
+				app:layout_constraintStart_toEndOf="@+id/dayButton01"
+				app:layout_constraintTop_toTopOf="parent" />
+
+			<view
+				android:id="@+id/dayButton03"
+				class="hks.calendar.ViewHKSCalendar$DayButton"
+				android:layout_width="@dimen/calendarTableCellWidth"
+				android:layout_height="@dimen/calendarTableCellHeight"
+				app:layout_constraintDimensionRatio="1:1"
+				android:layout_marginStart="@dimen/calendarTableCellMargin"
+				android:layout_marginEnd="@dimen/calendarTableCellMargin"
+				android:gravity="center"
+				app:layout_constraintBottom_toBottomOf="parent"
+				app:layout_constraintEnd_toStartOf="@+id/dayButton04"
+				app:layout_constraintStart_toEndOf="@+id/dayButton02"
+				app:layout_constraintTop_toTopOf="parent" />
+
+			<view
+				android:id="@+id/dayButton04"
+				class="hks.calendar.ViewHKSCalendar$DayButton"
+				android:layout_width="@dimen/calendarTableCellWidth"
+				android:layout_height="@dimen/calendarTableCellHeight"
+				app:layout_constraintDimensionRatio="1:1"
+				android:layout_marginStart="@dimen/calendarTableCellMargin"
+				android:layout_marginEnd="@dimen/calendarTableCellMargin"
+				android:gravity="center"
+				app:layout_constraintBottom_toBottomOf="parent"
+				app:layout_constraintEnd_toStartOf="@+id/dayButton05"
+				app:layout_constraintStart_toEndOf="@+id/dayButton03"
+				app:layout_constraintTop_toTopOf="parent" />
+
+			<view
+				android:id="@+id/dayButton05"
+				class="hks.calendar.ViewHKSCalendar$DayButton"
+				android:layout_width="@dimen/calendarTableCellWidth"
+				android:layout_height="@dimen/calendarTableCellHeight"
+				app:layout_constraintDimensionRatio="1:1"
+				android:layout_marginStart="@dimen/calendarTableCellMargin"
+				android:layout_marginEnd="@dimen/calendarTableCellMargin"
+				android:gravity="center"
+				app:layout_constraintBottom_toBottomOf="parent"
+				app:layout_constraintEnd_toStartOf="@+id/dayButton06"
+				app:layout_constraintStart_toEndOf="@+id/dayButton04"
+				app:layout_constraintTop_toTopOf="parent" />
+
+			<view
+				android:id="@+id/dayButton06"
+				class="hks.calendar.ViewHKSCalendar$DayButton"
+				android:layout_width="@dimen/calendarTableCellWidth"
+				android:layout_height="@dimen/calendarTableCellHeight"
+				app:layout_constraintDimensionRatio="1:1"
+				android:layout_marginStart="@dimen/calendarTableCellMargin"
+				android:layout_marginEnd="@dimen/calendarTableCellMargin"
+				android:gravity="center"
+				app:layout_constraintBottom_toBottomOf="parent"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toEndOf="@+id/dayButton05"
+				app:layout_constraintTop_toTopOf="parent" />
+		</androidx.constraintlayout.widget.ConstraintLayout>
+
+		<androidx.constraintlayout.widget.ConstraintLayout
+			android:id="@+id/row1"
+			android:layout_width="@dimen/calendarTableRowWidth"
+			android:layout_height="@dimen/calendarTableRowHeight"
+			android:layout_marginTop="4dp"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@+id/row0">
+
+			<view
+				android:id="@+id/dayButton10"
+				class="hks.calendar.ViewHKSCalendar$DayButton"
+				android:layout_width="@dimen/calendarTableCellWidth"
+				android:layout_height="@dimen/calendarTableCellHeight"
+				app:layout_constraintDimensionRatio="1:1"
+				android:layout_marginStart="@dimen/calendarTableCellMargin"
+				android:layout_marginEnd="@dimen/calendarTableCellMargin"
+				android:gravity="center"
+				app:layout_constraintBottom_toBottomOf="parent"
+				app:layout_constraintEnd_toStartOf="@+id/dayButton11"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toTopOf="parent" />
+
+			<view
+				android:id="@+id/dayButton11"
+				class="hks.calendar.ViewHKSCalendar$DayButton"
+				android:layout_width="@dimen/calendarTableCellWidth"
+				android:layout_height="@dimen/calendarTableCellHeight"
+				app:layout_constraintDimensionRatio="1:1"
+				android:layout_marginStart="@dimen/calendarTableCellMargin"
+				android:layout_marginEnd="@dimen/calendarTableCellMargin"
+				android:gravity="center"
+				app:layout_constraintBottom_toBottomOf="parent"
+				app:layout_constraintEnd_toStartOf="@+id/dayButton12"
+				app:layout_constraintStart_toEndOf="@+id/dayButton10"
+				app:layout_constraintTop_toTopOf="parent" />
+
+			<view
+				android:id="@+id/dayButton12"
+				class="hks.calendar.ViewHKSCalendar$DayButton"
+				android:layout_width="@dimen/calendarTableCellWidth"
+				android:layout_height="@dimen/calendarTableCellHeight"
+				app:layout_constraintDimensionRatio="1:1"
+				android:layout_marginStart="@dimen/calendarTableCellMargin"
+				android:layout_marginEnd="@dimen/calendarTableCellMargin"
+				android:gravity="center"
+				app:layout_constraintBottom_toBottomOf="parent"
+				app:layout_constraintEnd_toStartOf="@+id/dayButton13"
+				app:layout_constraintStart_toEndOf="@+id/dayButton11"
+				app:layout_constraintTop_toTopOf="parent" />
+
+			<view
+				android:id="@+id/dayButton13"
+				class="hks.calendar.ViewHKSCalendar$DayButton"
+				android:layout_width="@dimen/calendarTableCellWidth"
+				android:layout_height="@dimen/calendarTableCellHeight"
+				app:layout_constraintDimensionRatio="1:1"
+				android:layout_marginStart="@dimen/calendarTableCellMargin"
+				android:layout_marginEnd="@dimen/calendarTableCellMargin"
+				android:gravity="center"
+				app:layout_constraintBottom_toBottomOf="parent"
+				app:layout_constraintEnd_toStartOf="@+id/dayButton14"
+				app:layout_constraintStart_toEndOf="@+id/dayButton12"
+				app:layout_constraintTop_toTopOf="parent" />
+
+			<view
+				android:id="@+id/dayButton14"
+				class="hks.calendar.ViewHKSCalendar$DayButton"
+				android:layout_width="@dimen/calendarTableCellWidth"
+				android:layout_height="@dimen/calendarTableCellHeight"
+				app:layout_constraintDimensionRatio="1:1"
+				android:layout_marginStart="@dimen/calendarTableCellMargin"
+				android:layout_marginEnd="@dimen/calendarTableCellMargin"
+				android:gravity="center"
+				app:layout_constraintBottom_toBottomOf="parent"
+				app:layout_constraintEnd_toStartOf="@+id/dayButton15"
+				app:layout_constraintStart_toEndOf="@+id/dayButton13"
+				app:layout_constraintTop_toTopOf="parent" />
+
+			<view
+				android:id="@+id/dayButton15"
+				class="hks.calendar.ViewHKSCalendar$DayButton"
+				android:layout_width="@dimen/calendarTableCellWidth"
+				android:layout_height="@dimen/calendarTableCellHeight"
+				app:layout_constraintDimensionRatio="1:1"
+				android:layout_marginStart="@dimen/calendarTableCellMargin"
+				android:layout_marginEnd="@dimen/calendarTableCellMargin"
+				android:gravity="center"
+				app:layout_constraintBottom_toBottomOf="parent"
+				app:layout_constraintEnd_toStartOf="@+id/dayButton16"
+				app:layout_constraintStart_toEndOf="@+id/dayButton14"
+				app:layout_constraintTop_toTopOf="parent" />
+
+			<view
+				android:id="@+id/dayButton16"
+				class="hks.calendar.ViewHKSCalendar$DayButton"
+				android:layout_width="@dimen/calendarTableCellWidth"
+				android:layout_height="@dimen/calendarTableCellHeight"
+				app:layout_constraintDimensionRatio="1:1"
+				android:layout_marginStart="@dimen/calendarTableCellMargin"
+				android:layout_marginEnd="@dimen/calendarTableCellMargin"
+				android:gravity="center"
+				app:layout_constraintBottom_toBottomOf="parent"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toEndOf="@+id/dayButton15"
+				app:layout_constraintTop_toTopOf="parent" />
+		</androidx.constraintlayout.widget.ConstraintLayout>
+
+		<androidx.constraintlayout.widget.ConstraintLayout
+			android:id="@+id/row2"
+			android:layout_width="@dimen/calendarTableRowWidth"
+			android:layout_height="@dimen/calendarTableRowHeight"
+			android:layout_marginTop="4dp"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@+id/row1">
+
+			<view
+				android:id="@+id/dayButton20"
+				class="hks.calendar.ViewHKSCalendar$DayButton"
+				android:layout_width="@dimen/calendarTableCellWidth"
+				android:layout_height="@dimen/calendarTableCellHeight"
+				app:layout_constraintDimensionRatio="1:1"
+				android:layout_marginStart="@dimen/calendarTableCellMargin"
+				android:layout_marginEnd="@dimen/calendarTableCellMargin"
+				android:gravity="center"
+				app:layout_constraintBottom_toBottomOf="parent"
+				app:layout_constraintEnd_toStartOf="@+id/dayButton21"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toTopOf="parent" />
+
+			<view
+				android:id="@+id/dayButton21"
+				class="hks.calendar.ViewHKSCalendar$DayButton"
+				android:layout_width="@dimen/calendarTableCellWidth"
+				android:layout_height="@dimen/calendarTableCellHeight"
+				app:layout_constraintDimensionRatio="1:1"
+				android:layout_marginStart="@dimen/calendarTableCellMargin"
+				android:layout_marginEnd="@dimen/calendarTableCellMargin"
+				android:gravity="center"
+				app:layout_constraintBottom_toBottomOf="parent"
+				app:layout_constraintEnd_toStartOf="@+id/dayButton22"
+				app:layout_constraintStart_toEndOf="@+id/dayButton20"
+				app:layout_constraintTop_toTopOf="parent" />
+
+			<view
+				android:id="@+id/dayButton22"
+				class="hks.calendar.ViewHKSCalendar$DayButton"
+				android:layout_width="@dimen/calendarTableCellWidth"
+				android:layout_height="@dimen/calendarTableCellHeight"
+				app:layout_constraintDimensionRatio="1:1"
+				android:layout_marginStart="@dimen/calendarTableCellMargin"
+				android:layout_marginEnd="@dimen/calendarTableCellMargin"
+				android:gravity="center"
+				app:layout_constraintBottom_toBottomOf="parent"
+				app:layout_constraintEnd_toStartOf="@+id/dayButton23"
+				app:layout_constraintStart_toEndOf="@+id/dayButton21"
+				app:layout_constraintTop_toTopOf="parent" />
+
+			<view
+				android:id="@+id/dayButton23"
+				class="hks.calendar.ViewHKSCalendar$DayButton"
+				android:layout_width="@dimen/calendarTableCellWidth"
+				android:layout_height="@dimen/calendarTableCellHeight"
+				app:layout_constraintDimensionRatio="1:1"
+				android:layout_marginStart="@dimen/calendarTableCellMargin"
+				android:layout_marginEnd="@dimen/calendarTableCellMargin"
+				android:gravity="center"
+				app:layout_constraintBottom_toBottomOf="parent"
+				app:layout_constraintEnd_toStartOf="@+id/dayButton24"
+				app:layout_constraintStart_toEndOf="@+id/dayButton22"
+				app:layout_constraintTop_toTopOf="parent" />
+
+			<view
+				android:id="@+id/dayButton24"
+				class="hks.calendar.ViewHKSCalendar$DayButton"
+				android:layout_width="@dimen/calendarTableCellWidth"
+				android:layout_height="@dimen/calendarTableCellHeight"
+				app:layout_constraintDimensionRatio="1:1"
+				android:layout_marginStart="@dimen/calendarTableCellMargin"
+				android:layout_marginEnd="@dimen/calendarTableCellMargin"
+				android:gravity="center"
+				app:layout_constraintBottom_toBottomOf="parent"
+				app:layout_constraintEnd_toStartOf="@+id/dayButton25"
+				app:layout_constraintStart_toEndOf="@+id/dayButton23"
+				app:layout_constraintTop_toTopOf="parent" />
+
+			<view
+				android:id="@+id/dayButton25"
+				class="hks.calendar.ViewHKSCalendar$DayButton"
+				android:layout_width="@dimen/calendarTableCellWidth"
+				android:layout_height="@dimen/calendarTableCellHeight"
+				android:layout_marginStart="@dimen/calendarTableCellMargin"
+				android:layout_marginEnd="@dimen/calendarTableCellMargin"
+				android:gravity="center"
+				app:layout_constraintBottom_toBottomOf="parent"
+				app:layout_constraintDimensionRatio="1:1"
+				app:layout_constraintEnd_toStartOf="@+id/dayButton26"
+				app:layout_constraintStart_toEndOf="@+id/dayButton24"
+				app:layout_constraintTop_toTopOf="parent" />
+
+			<view
+				android:id="@+id/dayButton26"
+				class="hks.calendar.ViewHKSCalendar$DayButton"
+				android:layout_width="@dimen/calendarTableCellWidth"
+				android:layout_height="@dimen/calendarTableCellHeight"
+				app:layout_constraintDimensionRatio="1:1"
+				android:layout_marginStart="@dimen/calendarTableCellMargin"
+				android:layout_marginEnd="@dimen/calendarTableCellMargin"
+				android:gravity="center"
+				app:layout_constraintBottom_toBottomOf="parent"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toEndOf="@+id/dayButton25"
+				app:layout_constraintTop_toTopOf="parent" />
+
+		</androidx.constraintlayout.widget.ConstraintLayout>
+
+		<androidx.constraintlayout.widget.ConstraintLayout
+			android:id="@+id/row3"
+			android:layout_width="@dimen/calendarTableRowWidth"
+			android:layout_height="@dimen/calendarTableRowHeight"
+			android:layout_marginTop="4dp"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@+id/row2">
+
+			<view
+				android:id="@+id/dayButton30"
+				class="hks.calendar.ViewHKSCalendar$DayButton"
+				android:layout_width="@dimen/calendarTableCellWidth"
+				android:layout_height="@dimen/calendarTableCellHeight"
+				app:layout_constraintDimensionRatio="1:1"
+				android:layout_marginStart="@dimen/calendarTableCellMargin"
+				android:layout_marginEnd="@dimen/calendarTableCellMargin"
+				android:gravity="center"
+				app:layout_constraintBottom_toBottomOf="parent"
+				app:layout_constraintEnd_toStartOf="@+id/dayButton31"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toTopOf="parent" />
+
+			<view
+				android:id="@+id/dayButton31"
+				class="hks.calendar.ViewHKSCalendar$DayButton"
+				android:layout_width="@dimen/calendarTableCellWidth"
+				android:layout_height="@dimen/calendarTableCellHeight"
+				app:layout_constraintDimensionRatio="1:1"
+				android:layout_marginStart="@dimen/calendarTableCellMargin"
+				android:layout_marginEnd="@dimen/calendarTableCellMargin"
+				android:gravity="center"
+				app:layout_constraintBottom_toBottomOf="parent"
+				app:layout_constraintEnd_toStartOf="@+id/dayButton32"
+				app:layout_constraintStart_toEndOf="@+id/dayButton30"
+				app:layout_constraintTop_toTopOf="parent" />
+
+			<view
+				android:id="@+id/dayButton32"
+				class="hks.calendar.ViewHKSCalendar$DayButton"
+				android:layout_width="@dimen/calendarTableCellWidth"
+				android:layout_height="@dimen/calendarTableCellHeight"
+				app:layout_constraintDimensionRatio="1:1"
+				android:layout_marginStart="@dimen/calendarTableCellMargin"
+				android:layout_marginEnd="@dimen/calendarTableCellMargin"
+				android:gravity="center"
+				app:layout_constraintBottom_toBottomOf="parent"
+				app:layout_constraintEnd_toStartOf="@+id/dayButton33"
+				app:layout_constraintStart_toEndOf="@+id/dayButton31"
+				app:layout_constraintTop_toTopOf="parent" />
+
+			<view
+				android:id="@+id/dayButton33"
+				class="hks.calendar.ViewHKSCalendar$DayButton"
+				android:layout_width="@dimen/calendarTableCellWidth"
+				android:layout_height="@dimen/calendarTableCellHeight"
+				app:layout_constraintDimensionRatio="1:1"
+				android:layout_marginStart="@dimen/calendarTableCellMargin"
+				android:layout_marginEnd="@dimen/calendarTableCellMargin"
+				android:gravity="center"
+				app:layout_constraintBottom_toBottomOf="parent"
+				app:layout_constraintEnd_toStartOf="@+id/dayButton34"
+				app:layout_constraintStart_toEndOf="@+id/dayButton32"
+				app:layout_constraintTop_toTopOf="parent" />
+
+			<view
+				android:id="@+id/dayButton34"
+				class="hks.calendar.ViewHKSCalendar$DayButton"
+				android:layout_width="@dimen/calendarTableCellWidth"
+				android:layout_height="@dimen/calendarTableCellHeight"
+				app:layout_constraintDimensionRatio="1:1"
+				android:layout_marginStart="@dimen/calendarTableCellMargin"
+				android:layout_marginEnd="@dimen/calendarTableCellMargin"
+				android:gravity="center"
+				app:layout_constraintBottom_toBottomOf="parent"
+				app:layout_constraintEnd_toStartOf="@+id/dayButton35"
+				app:layout_constraintStart_toEndOf="@+id/dayButton33"
+				app:layout_constraintTop_toTopOf="parent" />
+
+			<view
+				android:id="@+id/dayButton35"
+				class="hks.calendar.ViewHKSCalendar$DayButton"
+				android:layout_width="@dimen/calendarTableCellWidth"
+				android:layout_height="@dimen/calendarTableCellHeight"
+				app:layout_constraintDimensionRatio="1:1"
+				android:layout_marginStart="@dimen/calendarTableCellMargin"
+				android:layout_marginEnd="@dimen/calendarTableCellMargin"
+				android:gravity="center"
+				app:layout_constraintBottom_toBottomOf="parent"
+				app:layout_constraintEnd_toStartOf="@+id/dayButton36"
+				app:layout_constraintStart_toEndOf="@+id/dayButton34"
+				app:layout_constraintTop_toTopOf="parent" />
+
+			<view
+				android:id="@+id/dayButton36"
+				class="hks.calendar.ViewHKSCalendar$DayButton"
+				android:layout_width="@dimen/calendarTableCellWidth"
+				android:layout_height="@dimen/calendarTableCellHeight"
+				app:layout_constraintDimensionRatio="1:1"
+				android:layout_marginStart="@dimen/calendarTableCellMargin"
+				android:layout_marginEnd="@dimen/calendarTableCellMargin"
+				android:gravity="center"
+				app:layout_constraintBottom_toBottomOf="parent"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toEndOf="@+id/dayButton35"
+				app:layout_constraintTop_toTopOf="parent" />
+		</androidx.constraintlayout.widget.ConstraintLayout>
+
+		<androidx.constraintlayout.widget.ConstraintLayout
+			android:id="@+id/row4"
+			android:layout_width="@dimen/calendarTableRowWidth"
+			android:layout_height="@dimen/calendarTableRowHeight"
+			android:layout_marginTop="4dp"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@+id/row3">
+
+			<view
+				android:id="@+id/dayButton40"
+				class="hks.calendar.ViewHKSCalendar$DayButton"
+				android:layout_width="@dimen/calendarTableCellWidth"
+				android:layout_height="@dimen/calendarTableCellHeight"
+				app:layout_constraintDimensionRatio="1:1"
+				android:layout_marginStart="@dimen/calendarTableCellMargin"
+				android:layout_marginEnd="@dimen/calendarTableCellMargin"
+				android:gravity="center"
+				app:layout_constraintBottom_toBottomOf="parent"
+				app:layout_constraintEnd_toStartOf="@+id/dayButton41"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toTopOf="parent" />
+
+			<view
+				android:id="@+id/dayButton41"
+				class="hks.calendar.ViewHKSCalendar$DayButton"
+				android:layout_width="@dimen/calendarTableCellWidth"
+				android:layout_height="@dimen/calendarTableCellHeight"
+				app:layout_constraintDimensionRatio="1:1"
+				android:layout_marginStart="@dimen/calendarTableCellMargin"
+				android:layout_marginEnd="@dimen/calendarTableCellMargin"
+				android:gravity="center"
+				app:layout_constraintBottom_toBottomOf="parent"
+				app:layout_constraintEnd_toStartOf="@+id/dayButton42"
+				app:layout_constraintStart_toEndOf="@+id/dayButton40"
+				app:layout_constraintTop_toTopOf="parent" />
+
+			<view
+				android:id="@+id/dayButton42"
+				class="hks.calendar.ViewHKSCalendar$DayButton"
+				android:layout_width="@dimen/calendarTableCellWidth"
+				android:layout_height="@dimen/calendarTableCellHeight"
+				app:layout_constraintDimensionRatio="1:1"
+				android:layout_marginStart="@dimen/calendarTableCellMargin"
+				android:layout_marginEnd="@dimen/calendarTableCellMargin"
+				android:gravity="center"
+				app:layout_constraintBottom_toBottomOf="parent"
+				app:layout_constraintEnd_toStartOf="@+id/dayButton43"
+				app:layout_constraintStart_toEndOf="@+id/dayButton41"
+				app:layout_constraintTop_toTopOf="parent" />
+
+			<view
+				android:id="@+id/dayButton43"
+				class="hks.calendar.ViewHKSCalendar$DayButton"
+				android:layout_width="@dimen/calendarTableCellWidth"
+				android:layout_height="@dimen/calendarTableCellHeight"
+				app:layout_constraintDimensionRatio="1:1"
+				android:layout_marginStart="@dimen/calendarTableCellMargin"
+				android:layout_marginEnd="@dimen/calendarTableCellMargin"
+				android:gravity="center"
+				app:layout_constraintBottom_toBottomOf="parent"
+				app:layout_constraintEnd_toStartOf="@+id/dayButton44"
+				app:layout_constraintStart_toEndOf="@+id/dayButton42"
+				app:layout_constraintTop_toTopOf="parent" />
+
+			<view
+				android:id="@+id/dayButton44"
+				class="hks.calendar.ViewHKSCalendar$DayButton"
+				android:layout_width="@dimen/calendarTableCellWidth"
+				android:layout_height="@dimen/calendarTableCellHeight"
+				app:layout_constraintDimensionRatio="1:1"
+				android:layout_marginStart="@dimen/calendarTableCellMargin"
+				android:layout_marginEnd="@dimen/calendarTableCellMargin"
+				android:gravity="center"
+				app:layout_constraintBottom_toBottomOf="parent"
+				app:layout_constraintEnd_toStartOf="@+id/dayButton45"
+				app:layout_constraintStart_toEndOf="@+id/dayButton43"
+				app:layout_constraintTop_toTopOf="parent" />
+
+			<view
+				android:id="@+id/dayButton45"
+				class="hks.calendar.ViewHKSCalendar$DayButton"
+				android:layout_width="@dimen/calendarTableCellWidth"
+				android:layout_height="@dimen/calendarTableCellHeight"
+				app:layout_constraintDimensionRatio="1:1"
+				android:layout_marginStart="@dimen/calendarTableCellMargin"
+				android:layout_marginEnd="@dimen/calendarTableCellMargin"
+				android:gravity="center"
+				app:layout_constraintBottom_toBottomOf="parent"
+				app:layout_constraintEnd_toStartOf="@+id/dayButton46"
+				app:layout_constraintStart_toEndOf="@+id/dayButton44"
+				app:layout_constraintTop_toTopOf="parent" />
+
+			<view
+				android:id="@+id/dayButton46"
+				class="hks.calendar.ViewHKSCalendar$DayButton"
+				android:layout_width="@dimen/calendarTableCellWidth"
+				android:layout_height="@dimen/calendarTableCellHeight"
+				app:layout_constraintDimensionRatio="1:1"
+				android:layout_marginStart="@dimen/calendarTableCellMargin"
+				android:layout_marginEnd="@dimen/calendarTableCellMargin"
+				android:gravity="center"
+				app:layout_constraintBottom_toBottomOf="parent"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toEndOf="@+id/dayButton45"
+				app:layout_constraintTop_toTopOf="parent" />
+		</androidx.constraintlayout.widget.ConstraintLayout>
+
+		<androidx.constraintlayout.widget.ConstraintLayout
+			android:id="@+id/row5"
+			android:layout_width="@dimen/calendarTableRowWidth"
+			android:layout_height="@dimen/calendarTableRowHeight"
+			android:layout_marginTop="4dp"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@+id/row4">
+
+			<view
+				android:id="@+id/dayButton50"
+				class="hks.calendar.ViewHKSCalendar$DayButton"
+				android:layout_width="@dimen/calendarTableCellWidth"
+				android:layout_height="@dimen/calendarTableCellHeight"
+				app:layout_constraintDimensionRatio="1:1"
+				android:layout_marginStart="@dimen/calendarTableCellMargin"
+				android:layout_marginEnd="@dimen/calendarTableCellMargin"
+				android:gravity="center"
+				app:layout_constraintBottom_toBottomOf="parent"
+				app:layout_constraintEnd_toStartOf="@+id/dayButton51"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toTopOf="parent" />
+
+			<view
+				android:id="@+id/dayButton51"
+				class="hks.calendar.ViewHKSCalendar$DayButton"
+				android:layout_width="@dimen/calendarTableCellWidth"
+				android:layout_height="@dimen/calendarTableCellHeight"
+				app:layout_constraintDimensionRatio="1:1"
+				android:layout_marginStart="@dimen/calendarTableCellMargin"
+				android:layout_marginEnd="@dimen/calendarTableCellMargin"
+				android:gravity="center"
+				app:layout_constraintBottom_toBottomOf="parent"
+				app:layout_constraintEnd_toStartOf="@+id/dayButton52"
+				app:layout_constraintStart_toEndOf="@+id/dayButton50"
+				app:layout_constraintTop_toTopOf="parent" />
+
+			<view
+				android:id="@+id/dayButton52"
+				class="hks.calendar.ViewHKSCalendar$DayButton"
+				android:layout_width="@dimen/calendarTableCellWidth"
+				android:layout_height="@dimen/calendarTableCellHeight"
+				app:layout_constraintDimensionRatio="1:1"
+				android:layout_marginStart="@dimen/calendarTableCellMargin"
+				android:layout_marginEnd="@dimen/calendarTableCellMargin"
+				android:gravity="center"
+				app:layout_constraintBottom_toBottomOf="parent"
+				app:layout_constraintEnd_toStartOf="@+id/dayButton53"
+				app:layout_constraintStart_toEndOf="@+id/dayButton51"
+				app:layout_constraintTop_toTopOf="parent" />
+
+			<view
+				android:id="@+id/dayButton53"
+				class="hks.calendar.ViewHKSCalendar$DayButton"
+				android:layout_width="@dimen/calendarTableCellWidth"
+				android:layout_height="@dimen/calendarTableCellHeight"
+				app:layout_constraintDimensionRatio="1:1"
+				android:layout_marginStart="@dimen/calendarTableCellMargin"
+				android:layout_marginEnd="@dimen/calendarTableCellMargin"
+				android:gravity="center"
+				app:layout_constraintBottom_toBottomOf="parent"
+				app:layout_constraintEnd_toStartOf="@+id/dayButton54"
+				app:layout_constraintStart_toEndOf="@+id/dayButton52"
+				app:layout_constraintTop_toTopOf="parent" />
+
+			<view
+				android:id="@+id/dayButton54"
+				class="hks.calendar.ViewHKSCalendar$DayButton"
+				android:layout_width="@dimen/calendarTableCellWidth"
+				android:layout_height="@dimen/calendarTableCellHeight"
+				app:layout_constraintDimensionRatio="1:1"
+				android:layout_marginStart="@dimen/calendarTableCellMargin"
+				android:layout_marginEnd="@dimen/calendarTableCellMargin"
+				android:gravity="center"
+				app:layout_constraintBottom_toBottomOf="parent"
+				app:layout_constraintEnd_toStartOf="@+id/dayButton55"
+				app:layout_constraintStart_toEndOf="@+id/dayButton53"
+				app:layout_constraintTop_toTopOf="parent" />
+
+			<view
+				android:id="@+id/dayButton55"
+				class="hks.calendar.ViewHKSCalendar$DayButton"
+				android:layout_width="@dimen/calendarTableCellWidth"
+				android:layout_height="@dimen/calendarTableCellHeight"
+				app:layout_constraintDimensionRatio="1:1"
+				android:layout_marginStart="@dimen/calendarTableCellMargin"
+				android:layout_marginEnd="@dimen/calendarTableCellMargin"
+				android:gravity="center"
+				app:layout_constraintBottom_toBottomOf="parent"
+				app:layout_constraintEnd_toStartOf="@+id/dayButton56"
+				app:layout_constraintStart_toEndOf="@+id/dayButton54"
+				app:layout_constraintTop_toTopOf="parent" />
+
+			<view
+				android:id="@+id/dayButton56"
+				class="hks.calendar.ViewHKSCalendar$DayButton"
+				android:layout_width="@dimen/calendarTableCellWidth"
+				android:layout_height="@dimen/calendarTableCellHeight"
+				app:layout_constraintDimensionRatio="1:1"
+				android:layout_marginStart="@dimen/calendarTableCellMargin"
+				android:layout_marginEnd="@dimen/calendarTableCellMargin"
+				android:gravity="center"
+				app:layout_constraintBottom_toBottomOf="parent"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toEndOf="@+id/dayButton55"
+				app:layout_constraintTop_toTopOf="parent" />
+		</androidx.constraintlayout.widget.ConstraintLayout>
+	</hks.calendar.ViewHKSCalendar>
+
+	<ScrollView
+		android:id="@+id/scrollView"
+		android:layout_width="0dp"
+		android:layout_height="0dp"
+		android:layout_marginStart="@dimen/calendarTableCellMargin"
+		android:layout_marginEnd="@dimen/calendarTableCellMargin"
+		android:fadeScrollbars="false"
+		app:layout_constraintBottom_toTopOf="@+id/addEventButton"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/viewHKSCalendar">
+
+		<LinearLayout
+			android:id="@+id/eventsLayout"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center|top"
+			android:orientation="vertical" />
+	</ScrollView>
+
+	<Button
+		android:id="@+id/addEventButton"
+		style="@style/Widget.AppCompat.Button"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="@dimen/calendarTableCellMargin"
+		android:layout_marginEnd="@dimen/calendarTableCellMargin"
+		android:text="@string/buttonTextAddEvent"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/scrollView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

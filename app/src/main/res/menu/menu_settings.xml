@@ -1,0 +1,22 @@
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:android="http://schemas.android.com/apk/res/android" >
+
+	<!-- Settings, should always be in the overflow -->
+	<item android:id="@+id/action_event_types"
+		android:title="@string/actionEventTypes" />
+
+	<item android:id="@+id/action_notification_settings"
+		android:title="@string/actionNotificationsSettings"
+		app:showAsAction="never" />
+
+	<item android:id="@+id/menu_date_chooser_button"
+		android:title="@string/dateChooser"
+		app:showAsAction="always"
+		app:actionViewClass="android.widget.Button" />
+
+	<item android:id="@+id/action_go_home"
+		android:title="@string/actionNotificationsSettings"
+		android:icon="@drawable/ic_baseline_home_24"
+		app:showAsAction="ifRoom"/>
+
+</menu>

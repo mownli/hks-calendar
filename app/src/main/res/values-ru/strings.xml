@@ -1,0 +1,71 @@
+<resources>
+	<string name="app_name">Календарь</string>
+	<string name="notificationChannelName">Глобальные настройки</string>
+
+	<string name="month_0">Январь</string>
+	<string name="month_1">Февраль</string>
+	<string name="month_2">Март</string>
+	<string name="month_3">Апрель</string>
+	<string name="month_4">Май</string>
+	<string name="month_5">Июнь</string>
+	<string name="month_6">Июль</string>
+	<string name="month_7">Август</string>
+	<string name="month_8">Сентябрь</string>
+	<string name="month_9">Октябрь</string>
+	<string name="month_10">Ноябрь</string>
+	<string name="month_11">Декабрь</string>
+
+	<string name="month_short_0">Янв</string>
+	<string name="month_short_1">Фев</string>
+	<string name="month_short_2">Мар</string>
+	<string name="month_short_3">Апр</string>
+	<string name="month_short_4">Май</string>
+	<string name="month_short_5">Июн</string>
+	<string name="month_short_6">Июл</string>
+	<string name="month_short_7">Авг</string>
+	<string name="month_short_8">Сен</string>
+	<string name="month_short_9">Окт</string>
+	<string name="month_short_10">Ноя</string>
+	<string name="month_short_11">Дек</string>
+
+	<string name="weekday_0">Воскресенье</string>
+	<string name="weekday_1">Понедельник</string>
+	<string name="weekday_2">Вторник</string>
+	<string name="weekday_3">Среда</string>
+	<string name="weekday_4">Четверг</string>
+	<string name="weekday_5">Пятница</string>
+	<string name="weekday_6">Суббота</string>
+
+	<string name="weekday_short_0">Вс</string>
+	<string name="weekday_short_1">Пн</string>
+	<string name="weekday_short_2">Вт</string>
+	<string name="weekday_short_3">Ср</string>
+	<string name="weekday_short_4">Чт</string>
+	<string name="weekday_short_5">Пт</string>
+	<string name="weekday_short_6">Сб</string>
+	<string name="fieldNameHour">Час</string>
+	<string name="fieldNameMinute">Мин</string>
+	<string name="fieldNameName">Название</string>
+	<string name="fieldNameDescription">Описание</string>
+	<string name="fieldNameDay">День</string>
+	<string name="fieldNameMonth">Месяц</string>
+	<string name="fieldNameYear">Год</string>
+	<string name="fieldNameUSNC">Отдельные настройки уведомлений</string>
+	<string name="buttonTextSave">Сохранить</string>
+	<string name="buttonTextDelete">Удалить</string>
+	<string name="buttonTextAdd">Создать</string>
+	<string name="fieldNameEventType">Тип</string>
+	<string name="fieldNameColorPreview">Цвет</string>
+	<string name="notAllFieldsAreFilled">Не все обязательные поля заполнены.</string>
+	<string name="fieldNameTime">Время</string>
+	<string name="actionEventTypes">Типы событий</string>
+	<string name="titleActivityEditEvent">Изменить событие</string>
+	<string name="titleActivityEditEventType">Изменить тип события</string>
+	<string name="titleActivityEventTypeList">Типы событий</string>
+	<string name="errorsInFieldValues">В значениях полей есть ошибки.</string>
+	<string name="buttonTextAddEvent">Создать событие</string>
+	<string name="notificationChannelUsesGlobalSettings">Использует глобальные настройки.</string>
+	<string name="errorCouldNotSaveStorage">Не удалось сохранить данные</string>
+	<string name="actionNotificationsSettings">Настройки уведомлений</string>
+	<string name="dateChooser">Выбор даты</string>
+</resources>

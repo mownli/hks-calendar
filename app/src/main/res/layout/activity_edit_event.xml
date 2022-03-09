@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".ActivityEditEvent">
+
+	<androidx.constraintlayout.widget.ConstraintLayout
+		android:id="@+id/layoutEventEditDate"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/dialogActivityFieldMargin"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent">
+
+		<EditText
+			android:id="@+id/yearEdit"
+			android:layout_width="76dp"
+			android:layout_height="@dimen/dialogActivityFieldHeight"
+			android:layout_marginStart="8dp"
+			android:layout_marginTop="8dp"
+			android:layout_marginEnd="8dp"
+			android:layout_marginBottom="8dp"
+			android:autofillHints=""
+			android:hint="@string/fieldNameYear"
+			android:inputType="numberDecimal"
+			android:textSize="@dimen/dialogActivityFontSize"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintEnd_toStartOf="@+id/monthEdit"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toTopOf="parent" />
+
+		<EditText
+			android:id="@+id/monthEdit"
+			android:layout_width="0dp"
+			android:layout_height="@dimen/dialogActivityFieldHeight"
+			android:layout_marginStart="8dp"
+			android:layout_marginTop="8dp"
+			android:layout_marginEnd="8dp"
+			android:layout_marginBottom="8dp"
+			android:autofillHints=""
+			android:cursorVisible="false"
+			android:editable="false"
+			android:ems="10"
+			android:focusable="auto"
+			android:focusableInTouchMode="false"
+			android:hint="@string/fieldNameMonth"
+			android:inputType="none"
+			android:textSize="@dimen/dialogActivityFontSize"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintEnd_toStartOf="@+id/dayEdit"
+			app:layout_constraintStart_toEndOf="@+id/yearEdit"
+			app:layout_constraintTop_toTopOf="parent" />
+
+		<EditText
+			android:id="@+id/dayEdit"
+			android:layout_width="62dp"
+			android:layout_height="@dimen/dialogActivityFieldHeight"
+			android:layout_marginStart="8dp"
+			android:layout_marginTop="8dp"
+			android:layout_marginEnd="8dp"
+			android:layout_marginBottom="8dp"
+			android:autofillHints=""
+			android:ems="10"
+			android:hint="@string/fieldNameDay"
+			android:inputType="numberDecimal"
+			android:textSize="@dimen/dialogActivityFontSize"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintEnd_toStartOf="@+id/selectedDayName"
+			app:layout_constraintStart_toEndOf="@+id/monthEdit"
+			app:layout_constraintTop_toTopOf="parent"
+			app:layout_constraintVertical_bias="0.0" />
+
+		<TextView
+			android:id="@+id/selectedDayName"
+			android:layout_width="wrap_content"
+			android:layout_height="@dimen/dialogActivityFieldHeight"
+			android:layout_marginEnd="8dp"
+			android:gravity="center"
+			android:textSize="@dimen/dialogActivityFontSize"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintTop_toTopOf="parent" />
+	</androidx.constraintlayout.widget.ConstraintLayout>
+
+	<androidx.constraintlayout.widget.ConstraintLayout
+		android:id="@+id/layoutEventEditTime"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/dialogActivityFieldMargin"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.0"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/layoutEventEditDate">
+
+		<TextView
+			android:id="@+id/fieldNameTime"
+			android:layout_width="0dp"
+			android:layout_height="@dimen/dialogActivityFieldHeight"
+			android:layout_marginStart="8dp"
+			android:layout_marginTop="8dp"
+			android:layout_marginBottom="8dp"
+			android:gravity="center|right"
+			android:text="@string/fieldNameTime"
+			android:textSize="@dimen/dialogActivityFontSize"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toTopOf="parent" />
+
+		<EditText
+			android:id="@+id/hourEdit"
+			android:layout_width="60dp"
+			android:layout_height="@dimen/dialogActivityFieldHeight"
+			android:layout_marginStart="8dp"
+			android:layout_marginTop="8dp"
+			android:layout_marginBottom="8dp"
+			android:autofillHints=""
+			android:ems="10"
+			android:hint="@string/fieldNameHour"
+			android:inputType="numberDecimal"
+			android:textSize="@dimen/dialogActivityFontSize"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintStart_toEndOf="@+id/fieldNameTime"
+			app:layout_constraintTop_toTopOf="parent" />
+
+		<TextView
+			android:id="@+id/fieldTimeColon"
+			android:layout_width="0dp"
+			android:layout_height="@dimen/dialogActivityFieldHeight"
+			android:layout_marginStart="4dp"
+			android:layout_marginTop="8dp"
+			android:layout_marginBottom="8dp"
+			android:gravity="center|right"
+			android:text=":"
+			android:textSize="@dimen/dialogActivityFontSize"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintStart_toEndOf="@+id/hourEdit"
+			app:layout_constraintTop_toTopOf="parent" />
+
+		<EditText
+			android:id="@+id/minuteEdit"
+			android:layout_width="65dp"
+			android:layout_height="@dimen/dialogActivityFieldHeight"
+			android:layout_marginStart="4dp"
+			android:layout_marginTop="8dp"
+			android:layout_marginBottom="8dp"
+			android:autofillHints=""
+			android:ems="10"
+			android:hint="@string/fieldNameMinute"
+			android:inputType="numberDecimal"
+			android:textSize="@dimen/dialogActivityFontSize"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintStart_toEndOf="@+id/fieldTimeColon"
+			app:layout_constraintTop_toTopOf="parent" />
+
+	</androidx.constraintlayout.widget.ConstraintLayout>
+
+	<androidx.constraintlayout.widget.ConstraintLayout
+		android:id="@+id/layoutEventEditName"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/dialogActivityFieldMargin"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.0"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/layoutEventEditTime">
+
+		<TextView
+			android:id="@+id/fieldNameName"
+			android:layout_width="0dp"
+			android:layout_height="@dimen/dialogActivityFieldHeight"
+			android:layout_marginStart="8dp"
+			android:layout_marginTop="8dp"
+			android:layout_marginBottom="8dp"
+			android:gravity="center|right"
+			android:text="@string/fieldNameName"
+			android:textSize="@dimen/dialogActivityFontSize"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toTopOf="parent" />
+
+		<EditText
+			android:id="@+id/nameEdit"
+			android:layout_width="0dp"
+			android:layout_height="@dimen/dialogActivityFieldHeight"
+			android:layout_marginStart="8dp"
+			android:layout_marginTop="8dp"
+			android:layout_marginEnd="8dp"
+			android:autofillHints=""
+			android:ems="10"
+			android:hint="@string/fieldNameName"
+			android:inputType="text|textCapSentences"
+			android:textSize="@dimen/dialogActivityFontSize"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toEndOf="@+id/fieldNameName"
+			app:layout_constraintTop_toTopOf="parent" />
+	</androidx.constraintlayout.widget.ConstraintLayout>
+
+	<androidx.constraintlayout.widget.ConstraintLayout
+		android:id="@+id/layoutEventEditType"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/dialogActivityFieldMargin"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/layoutEventEditName">
+
+		<TextView
+			android:id="@+id/eventTypeDropdownName"
+			android:layout_width="0dp"
+			android:layout_height="@dimen/dialogActivityFieldHeight"
+			android:layout_marginStart="8dp"
+			android:layout_marginTop="8dp"
+			android:layout_marginBottom="8dp"
+			android:gravity="center|right"
+			android:text="@string/fieldNameEventType"
+			android:textSize="@dimen/dialogActivityFontSize"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toTopOf="parent" />
+
+		<Spinner
+			android:id="@+id/eventTypeDropdown"
+			android:layout_width="0dp"
+			android:layout_height="@dimen/dialogActivityFieldHeight"
+			android:layout_marginStart="8dp"
+			android:layout_marginTop="8dp"
+			android:layout_marginEnd="8dp"
+			android:layout_marginBottom="8dp"
+			android:spinnerMode="dropdown"
+			android:textSize="@dimen/dialogActivityFontSize"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toEndOf="@+id/eventTypeDropdownName"
+			app:layout_constraintTop_toTopOf="parent" />
+
+		<androidx.constraintlayout.widget.Group
+			android:id="@+id/group"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" />
+	</androidx.constraintlayout.widget.ConstraintLayout>
+
+	<androidx.constraintlayout.widget.ConstraintLayout
+		android:id="@+id/layoutEventEditDescription"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/dialogActivityFieldMargin"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.0"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/layoutEventEditType">
+
+		<TextView
+			android:id="@+id/fieldNameDescription"
+			android:layout_width="wrap_content"
+			android:layout_height="@dimen/dialogActivityFieldHeight"
+			android:layout_marginTop="8dp"
+			android:layout_marginBottom="4dp"
+			android:gravity="center"
+			android:text="@string/fieldNameDescription"
+			android:textSize="@dimen/dialogActivityFontSize"
+			app:layout_constraintBottom_toTopOf="@+id/descriptionEdit"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toTopOf="parent" />
+
+		<EditText
+			android:id="@+id/descriptionEdit"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="8dp"
+			android:layout_marginTop="4dp"
+			android:layout_marginEnd="8dp"
+			android:layout_marginBottom="8dp"
+			android:autofillHints=""
+			android:ems="10"
+			android:gravity="start|top"
+			android:hint="@string/fieldNameDescription"
+			android:inputType="text|textMultiLine|textCapSentences"
+			android:textSize="@dimen/dialogActivityFontSize"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@+id/fieldNameDescription" />
+	</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+	<Button
+		android:id="@+id/saveButton"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="8dp"
+		android:layout_marginTop="@dimen/dialogActivityFieldMargin"
+		android:text="@string/buttonTextSave"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toStartOf="@+id/deleteButton"
+		app:layout_constraintStart_toStartOf="parent" />
+
+	<Button
+		android:id="@+id/deleteButton"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_marginEnd="8dp"
+		android:layout_marginTop="@dimen/dialogActivityFieldMargin"
+		android:text="@string/buttonTextDelete"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toEndOf="@+id/saveButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
